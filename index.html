@@ -1,84 +1,301 @@
-
-<!---
-LeviF652/LeviF652 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>levi's webPage</title>
+        <title>גמרא</title>
         <style>
+        
+        body {
+            background-color: rgb(223, 223, 240);
+        }
+        
+        #start {
+            position: absolute;
+            left: 30px;
+        }
+        
+        #zoma {
+            position: absolute;
+            top: 65px;
+            right: 150px;
             
-            h1{
-                color: rgb(255, 0, 255);
-            }
+        }
+        
+        #yihuda {
+            position: absolute;
+            top: 65px;
+            left: 135px;
+        }
+        
+        .tanu {
+            background-color: rgb(255, 0, 255);
+            color: rgb(0, 0, 255);
+        }
+        
+        .opinion {
+            background-color: rgb(0, 0, 255);
+            color: rgb(0, 255, 255);
+        }
+        
+        .answer {
+            background-color: rgb(0, 255, 255);
+            color: rgb(0, 0, 255);
+        }
+        
+        .qwestion {
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 255, 0);
+        }
+        
+        .statment {
+            background-color: rgb(255, 255, 0);
+            color: rgb(0, 0, 255);
+        }
+        
+        #top-right {
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            background-color: purple;
+            color: rgb(0, 255, 255);
+            z-index: 3;
+        }
+        
+        #kal-chomer-hed {
+            position: absolute;
+            top: 100px;
+            right: 87px;
+        }
+        
+        #kal-chomer-text {
+            position: absolute;
+            top: 130px;
+            right: 87px;
+        }
+        
+        #yihuda-opinion {
+            position: absolute;
+            top: 100px;
+            left: 135px;
+        }
+        
+        #reeson {
+            position: absolute;
+            top: 120px;
+            left: 275px;
+            font-size: 30px;
+        }
+        
+        #difrents {
+            position: absolute;
+            top:165px;
+            left:237px;
+            font-size: 30px;
+        }
+        
+        #yihuda-dif {
+            position: absolute;
+            top: 237px;
+            left: 135px;
+        }
+        
+        #zoma-dif {
+            position: absolute;
+            top: 237px;
+            right: 87px;
+        }
+        
+        #Qdif {
+            position: absolute;
+            top: 260px;
+            left: 197px;
+        }
+        
+        
+        #yihuda-dif-B {
+            position: absolute;
+            top: 290px;
+            left: 135px;
+        }
+        
+        #zoma-dif-B {
+            position: absolute;
+            top: 290px;
+            right: 87px;
+        }
+        
+        #steera {
+            background-color: rgb(255, 255, 0);
+        }
+        
+        #hed-steera {
+            position: absolute;
+            top:370px;
+            right: 87px;
+        }
+        
+        #chacham {
+            position: absolute;
+            top: 437px;
+            right: 86px;
+            font-size: 25px;
+        }
+        
+        #yihuda-steera {
+            position: absolute;
+            top: 437px;
+            right: 145px;
+            font-size: 25px;
+        }
+        
+        #chacham-op {
+            position: absolute;
+            top: 460px;
+            right: 80px;
+            font-size: 30px;
+            background-color: rgb(0, 255, 0);
+            color: rgb(0, 0, 255);
             
-            .levis-things {
-                color: rgb(255, 0, 0);
-            }
-            
-            #sidbar {
-                width: 30%;
-                float: right;
-                background-color: rgb(26, 255, 0);
-                border: dashed;
-            }
-            
-            body {
-                background-color: rgb(255, 0, 255);
-            }
-            
-            #page {
-                width: 200px;
-                margin: auto;
-            }
-            
-            #hedline {
-                margin-left: 125px;
-                
-                
-            }
-            
-            #h2 {
-                padding-left: 25px;
-            }
-            
-            #contaner {
-                background-color: rgb(0, 255, 255);
-            }
-            
-            #coding {
-                position: absolute;
-                top: 100px;
-                left: 100px;
-                font-size: 20px;
-                background-color: rgb(0, 255, 0);
-            }
-            
-            #kniting {
-                position: absolute;
-                top: 100px;
-                left: 200px;
-                background-color: rgb(0, 255, 0);
-                font-size: 20px;
-            }
-            
-            
-            
+        }
+        
+        #yihuda-steera-op {
+            position: absolute;
+            top: 460px;
+            right: 144px;
+            font-size: 30px;
+        }
+        
+        #yihuda-steera-op-B {
+            position: absolute;
+            top: 532px;
+            right: 81px;
+            font-size: 25px;
+        }
+        
+        #QaA {
+            position: absolute;
+            top: 640px;
+            right: 81px;
+        }
+        
+        #number-A {
+            position: absolute;
+            right: 150px;
+            top: 822px;
+        }
+        
+        
+        
+        
         </style>
     </head>
     <body>
     
+    <h3 id="top-right">בס"ד</h3>
     
-<div id="contaner">
-    <h1 id="hedline">all about levi's webPage!</h1>
-        <div id="page">    
-    <h2 class="levis-things" id="h2">levi's hobbies</h2>
+    <h1 id="start" class="statment">אין אדם נכנס לעזרה אפילו טהר עד שיטבול</h1>
     
-    <p class="levis-things" id="sidbar"><span id="coding"><a href="https://www.khanacademy.org/profile/kaid_8741975217685822676313920/projects">coding</a></span> <a id="kniting" href="https://www.khanacademy.org/computer-programming/kniting/6491671997104128">kniting</a>, <a href="https://www.khanacademy.org/computer-programming/origami/6004842722148352">origami</a>, <a href="?">maping</a>,  <a href="https://www.khanacademy.org/computer-programming/magic/5568890153385984"><strong>magic</strong></a></p>
-</div>
-</div>
+    <h2 id="zoma" class="tanu">בן זומא </h2>
+    <h2 id="yihuda" class="tanu">רבי יהודה</h2>
+    
+    <h3 id="kal-chomer-hed" class="opinion">קל וחומר</h3>
+    
+    <p id="kal-chomer-text" class="opinion">
+    קל: מקודש לקודש טבל<br>
+    חומר: מחול לקודש טבל</p>
+
+    <p id="yihuda-opinion" class="opinion">
+    זכר שטמא ונכנס <br>
+    אחר הערב שמש</p>
+    
+    <h2 id="reeson" class="statment">טעם</h2>
+    
+    <h2 id="difrents" class="statment">חילוק להלכה</h2>
+    
+    <p id="zoma-dif" class="opinion">
+    מדאורייתא. נפסל</p>
+    
+    <p id="yihuda-dif" class="opinion">
+    מדרבנן. לא נפסל</p>
+    
+    <p id="Qdif" class="qwestion">
+    ברייתא. כהן גדול לא טבל פסול לא קידש כשר </p>
+    
+    <p id="zoma-dif-B" class="opinion">
+    מדאורייתא. עובר עשה</p>
+    
+    <p id="yihuda-dif-B" class="opinion">
+    מדרבנן. לא עובר עשה</p>
+    
+    <div id="steera">
+    <h3 id="hed-steera" class="statment">
+    סטירא לרבי יהודה<br>
+    ברייתא. מצורע ביום ח</h3>
+    
+    <h3 id="chacham" class="tanu">
+    חכמים</h3>
+    
+    <h3 id="yihuda-steera" class="tanu">
+    רבי יהודה</h3>
+    
+    <p id="chacham-op">
+    צריך<br>
+    טבילה</p>
+    
+    <p id="yihuda-steera-op" class="opinion">
+    לא צריך<br>
+    טבילה</p>
+    
+    <p id="yihuda-steera-op-B" class="opinion">
+    שכבר טבל ביום ז</p>
+    </div>
+    
+    <p id="QaA">
+    
+    <span id="QA" class="qwestion">
+    בברייתא אמר שכבר טבל ביום ז אמאי הביא ברייתא</span>
+    
+    <span class="answer">
+    <br>להביא ברייתא אחרת<br></span>
+    
+    <span class="qwestion">
+    ברייתא.<br> 
+    חכמים: לשכת מצורעים ששם מצורעים טובלים<br>
+    רבי יהודה: לא מצורעים בלבד טובלים אלא כל ישרא-ל<br>
+    </span>
+    
+    <span class="answer">
+    הא טבל ביום ז הא לא טבל ביום ז<br>
+    </span>
+    
+    <span class="qwestion">
+    אם לא טבל ביום ז יום ח כיום ז וקרבנות ביום ט<br>
+    </span>
+    
+    <span class="answer">
+    הא והא טבל אלא הא מסיח דעת והא לא מסיח דעת<br>
+    </span>
+    
+    <span class="qwestion">
+    אם הסח דעת יום ח כיום ג (והזה בג ובז)<br></span>
+    
+    <span class="answer">
+    הא והא טבל ולא הסח דעת אלא הא על דעת לכנס<br>
+    למקדש והא לא על דעת לכנס למקדש<br></span>
+    
+    <span class="answer">
+    </span>
+    
+    <span class="answer">
+    </span>
+    
+    
+     </p>
+    
+    <h2 id="number-A" class="statment">1</h2>
+    
+    
+    
     </body>
 </html>
+
